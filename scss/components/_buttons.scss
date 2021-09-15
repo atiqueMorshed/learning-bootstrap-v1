@@ -1,0 +1,38 @@
+.btn-rounded {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+  position: relative;
+  font-weight: 700;
+  background-color: $white;
+  margin: 0;
+  padding: 0.9rem 4.1rem 0.9rem 1.25rem;
+  border: 0.1rem solid rgba($white, 0.6);
+
+  span {
+    position: absolute;
+    background-color: $primary;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+
+    i {
+      color: $white;
+      font-size: 1rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  &:hover {
+    @include linearGradient;
+    background-color: linearGradient;
+    color: $white;
+
+    span {
+      background-color: rgba($black, 0.6);
+    }
+  }
+}
