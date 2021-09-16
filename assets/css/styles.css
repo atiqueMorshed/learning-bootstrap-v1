@@ -11976,6 +11976,25 @@ fieldset:disabled .btn {
   }
 }
 
+.heading-line::before {
+  content: "";
+  width: 10rem;
+  height: 0.1rem;
+  display: block;
+  background-color: #9926f0;
+  margin: 0 auto;
+}
+
+.heading-line::after {
+  content: "";
+  width: 2rem;
+  height: 0.5rem;
+  display: block;
+  background-color: #9926f0;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
 @-webkit-keyframes pulsatingBorder {
   0% {
     -webkit-transform: scale(1);
@@ -12106,5 +12125,27 @@ fieldset:disabled .btn {
 .intros .video-box a .border-animation--border-2 {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
+}
+
+.companies {
+  padding: 0 0 5rem 0;
+}
+
+.companies .companies__logo-box {
+  position: relative;
+  max-width: 100%;
+  height: 3rem;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.companies .companies__logo-box img {
+  height: 100%;
+}
+
+.companies .companies__logo-box img:hover {
+  -webkit-filter: grayscale(120);
+          filter: grayscale(120);
 }
 /*# sourceMappingURL=styles.css.map */
