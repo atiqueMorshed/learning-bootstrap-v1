@@ -11995,6 +11995,29 @@ fieldset:disabled .btn {
   margin-bottom: 1rem;
 }
 
+.display-3 {
+  font-family: "Roboto", sans-serif;
+}
+
+.display-3--title {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  display: inline-block;
+  background-image: -webkit-gradient(linear, left top, right top, from(#9926f0), to(#d122e3));
+  background-image: linear-gradient(to right, #9926f0, #d122e3);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .border-right {
+    border-right: 0.1rem solid #dee2e6;
+    height: 100%;
+  }
+}
+
 @-webkit-keyframes pulsatingBorder {
   0% {
     -webkit-transform: scale(1);
@@ -12147,5 +12170,31 @@ fieldset:disabled .btn {
 .companies .companies__logo-box img:hover {
   -webkit-filter: grayscale(120);
           filter: grayscale(120);
+}
+
+.services {
+  position: relative;
+  padding: 1rem 0;
+}
+
+.services__content {
+  padding: 1rem;
+  margin-top: 0rem;
+  min-height: 100%;
+}
+
+@media (min-width: 992px) {
+  .services__content {
+    margin-top: 5rem;
+  }
+}
+
+.services__content .icon {
+  font-size: 2.5rem;
+  color: #9926f0;
+}
+
+.services__image {
+  max-width: 100%;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,22 @@
+.services {
+  position: relative;
+  padding: 1rem 0;
+
+  &__content {
+    padding: 1rem;
+    margin-top: 0rem;
+    min-height: 100%;
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 5rem;
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      color: $primary;
+    }
+  }
+  &__image {
+    max-width: 100%;
+  }
+}

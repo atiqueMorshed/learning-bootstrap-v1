@@ -7,6 +7,14 @@
   );
 }
 
+@mixin linearGradientImage {
+  background-image: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($secondary, 0.95)
+  );
+}
+
 // Absolute Center
 
 @mixin absoluteCenter {
