@@ -16,10 +16,16 @@
 }
 
 // Absolute Center
-
 @mixin absoluteCenter {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%);
+}
+
+// Hover Transition
+
+@mixin hoverTransition {
+  transition: all;
+  transition-duration: 1s;
 }

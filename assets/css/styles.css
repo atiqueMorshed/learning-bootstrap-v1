@@ -12253,4 +12253,68 @@ fieldset:disabled .btn {
   padding-bottom: 2rem;
   text-transform: capitalize;
 }
+
+.portfolio {
+  padding: 4rem 0;
+}
+
+.portfolio button {
+  text-transform: capitalize;
+}
+
+.portfolio-box {
+  position: relative;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 1.2rem;
+}
+
+.portfolio-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.portfolio-box .portfolio-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(153, 38, 240, 0.8);
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.portfolio-box .portfolio-info .caption {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.portfolio-box:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.portfolio-box:hover .portfolio-info {
+  visibility: visible;
+  opacity: 1;
+}
 /*# sourceMappingURL=styles.css.map */
