@@ -63,3 +63,8 @@
     height: 100%;
   }
 }
+
+// Gradient
+.gradient {
+  @include linearGradient;
+}
